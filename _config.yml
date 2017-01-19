@@ -1,0 +1,61 @@
+title:            Victor Martins
+tagline:          Desenvolvedor Front-End
+description:
+# Your site's domain goes here. Leave localhost server or blank when working locally.
+# url:              http://localhost:3000
+url:              https://victormartins.com.br
+enforce_ssl:      victormartins.com.br
+
+# Image cover default
+cover:
+  default: home.jpg
+  credit: re:splashed
+  creditlink: http://www.resplashed.com/
+
+# Owner/author information
+owner:
+  name:           Victor Martins
+  avatar:         "https://avatars2.githubusercontent.com/u/6462673?v=3&s=460"
+  bio:            "Desenvolvedor Front-End"
+  email:          victorfrontend@gmail.com
+  # Social networking links are used in author-bio sidebar. Update and remove as you like.
+  twitter:        prescindivel
+  facebook:       prescindivel
+  github:         victordev
+  linkedin:       victormartins4
+  instagram:      prescindivel
+  lastfm:         prescindivel
+  pinterest:      prescindivel
+  # For Google Authorship https://plus.google.com/authorship
+  google_plus:    https://plus.google.com/110272394129910740612
+
+# Analytics and webmaster tools stuff goes here
+google_analytics:   UA-48294521-1
+google_verify:      Vk_OznIkGCtWe_l4ODtYatwsFu-qWk0yt-VHD2ILQBQ
+
+# Links to include in top navigation
+# For external links add external: true
+links:
+  - title: Sobre
+    url: /about/
+  - title: Posts
+    url: /posts/
+  - title: Projetos
+    url: /projects/
+  - title: Contato
+    url: /contact/
+
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:    America/Fortaleza
+future:      true
+highlighter: rouge
+markdown:    kramdown
+
+# https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink:   /:categories/:title/
+
+exclude: ["Gemfile", "Gemfile.lock", ".gitignore", "node_modules", "package.json", "Gulpfile.js"]
+
+
+encoding: utf-8
+lang: pt-BR
