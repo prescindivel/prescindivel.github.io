@@ -1,0 +1,15 @@
+<header class="header" style="background-image: url({{ site.url }}/assets/images/{{ page.cover }});">
+  <section id="nav" class="navigation">
+    <a href="/" class="logo">{{ site.title }}</a>
+
+    <nav class="site-nav">
+      <ul>
+        {% for link in site.links %}
+          <li>
+            <a href="{{ link.url }}" title="{{ link.title }}">{{ link.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </section>
+</header>
