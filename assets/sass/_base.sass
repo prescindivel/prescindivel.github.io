@@ -6,6 +6,9 @@ body
   font-size: 16px
   text-transform: lowercase
 
+.page
+  // padding-top: 50px
+
 .container
   margin: 0 auto
   padding-top: 60px
@@ -14,9 +17,17 @@ body
   padding-bottom: 100px
   max-width: 700px
   & > h1
-    font-size: 2.5em
+    font-size: em(40)
     text-align: center
     color: rgba($bg-color, .3)
+
+a
+  color: $bg-color
+  text-decoration: none
+  @extend %transition
+  &:hover
+    color: $white
+    background: $accent-color
 
 .button
   padding: 12px 20px
@@ -25,3 +36,11 @@ body
   text-decoration: none
   color: $white
   background-color: $accent-color
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .26);
+  @extend %transition
+  &:hover
+    background-color: darken($accent-color, 2%)
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .26)
+
+.adsense
+  margin-top: 60px

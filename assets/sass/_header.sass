@@ -1,9 +1,12 @@
 .header
-  height: 100vh
-  background-size: cover
-  background-position: center
-  background-attachment: fixed
-  overflow: hidden
+  position: relative
+  background: #000
+  &-bg
+    height: 100vh
+    background-size: cover
+    background-position: bottom center
+    background-attachment: fixed
+    opacity: .4
   &:after
     position: fixed
     top: 0
@@ -13,8 +16,26 @@
     background: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.42) 40%, rgba(0,0,0,0) 100%);
     content: ''
     z-index: 1
+  .bio,
+  .page-title
+    position: absolute
+    top: 50%
+    margin-top: 0
+    margin-bottom: 0
+    color: $white
+    text-align: center
+  .bio,
+    left: 50%
+    margin-left: -(560px / 2)
+    max-width: 560px
+  .page-title
+    padding-left: 15px
+    padding-right: 15px
+    width: 100%
+    font-size: em(48)
 
 .navigation
+  display: none
   position: fixed
   top: 0
   left: 0
@@ -22,14 +43,19 @@
   display: flex
   justify-content: space-between
   align-items: center
+  background-color: $bg-color
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .26)
   z-index: 2
   @extend %transition
+  .header-page &
+    background-color: transparent
+    box-shadow: none
   &.scroll
     background-color: $bg-color
 
 .logo
   padding: 15px 20px;
-  font-size: 20px
+  font-size: em(20)
   font-weight: 700
   text-align: center
   letter-spacing: 2px

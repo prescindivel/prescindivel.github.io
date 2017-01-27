@@ -1,0 +1,13 @@
+<section id="nav" class="navigation{% if page.url == '/' %} home{% endif %}">
+  <a href="/" class="logo">{{ site.title }}</a>
+
+  <nav class="site-nav">
+    <ul>
+      {% for link in site.links %}
+      <li>
+        <a href="{{ link.url }}" title="{{ link.title }}">{{ link.title }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </nav>
+</section>

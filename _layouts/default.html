@@ -3,10 +3,15 @@
 <head>
   {% include _head.html %}
 </head>
-<body>
-  {% include _header.html %}
+<body id="home" class="page-front">
+  <header class="header header-page">
+    <div class="header-bg" style="background-image: url({{ site.url }}/assets/images/{{ page.cover }});"></div>
+    {% include _navigation.html %}
 
-  <!-- {{ content }} -->
+    <h1 class="bio">
+      {{ site.description }}
+    </h1>
+  </header>
 
   <section class="container home clearfix" role="main">
     <h1>recentes</h1>
@@ -36,7 +41,9 @@
     </article>
     {% endfor %}
 
-    <a href="/artigos" class="button">artigos</a>
+    <a href="/artigos" class="button">ver todos</a>
+
+    {% include _adsense.html %}
   </section>
 
   {% include _scripts.html %}
