@@ -1,7 +1,7 @@
 {
   "name": "victor",
   "version": "1.0.0",
-  "description": "My blog theme written in Jekyll and Sass",
+  "description": "my personal website",
   "scripts": {
     "gulp": "gulp"
   },
