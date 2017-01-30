@@ -14,7 +14,6 @@ cover-page: home.jpg
     </time>
   </li>
   {% endfor %}
-  <a href="/blog" class="button">todos posts</a>
 </ul>
 
 # últimos projetos
@@ -27,5 +26,4 @@ cover-page: home.jpg
     </time>
   </li>
   {% endfor %}
-  <a href="/projects" class="button">todos projetos</a>
 </ul>

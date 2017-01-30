@@ -1,49 +1,63 @@
+body.blur
+  overflow: hidden
+  .navigation, .wrapper
+    filter: blur(2px)
+
 .image-post
-  border-radius: 5px
-  cursor: pointer
+  margin: 60px auto 60px
+  display: block
+  cursor: zoom-in
   transition: 0.3s
+  box-shadow: 0 15px 32px rgba(0,0,0, .3)
 
 .image-post:hover
-  opacity: 0.7
+  opacity: .7
 
 .popup
-  // display: none
   position: fixed
-  z-index: 9
-  padding-top: 10%
+  z-index: 10
   left: 0
   top: 0
   width: 100%
   height: 100%
-  // overflow-y: auto
-  background-color: rgba($white, .5)
+  background-color: rgba(0, 0, 0, .4)
+  justify-content: center
+  align-items: center
+  display: flex
+  visibility: hidden
+  &.open
+    visibility: visible
+    .popup-content
+      transform: scale3d(1,1,1)
+      opacity: 1
 
 .popup-content
-  margin: auto
-  display: block
+  position: relative
   max-width: 100%
+  z-index: 2
+  transition: .3s
+  opacity: 0
+  transform: scale3d(0,0,1)
   @media only screen and (max-width: 700px)
     width: 100%
 
-.popup-content
-  animation-name: zoom
-  animation-duration: 0.6s
-
-
-@keyframes zoom
-  from
-    transform:scale(0)
-  to
-    transform:scale(1)
+#out
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  z-index: 1
+  cursor: zoom-out
 
 .close
   position: absolute
   top: 15px
   right: 35px
-  color: #f1f1f1
+  color: $white
   font-size: 40px
-  font-weight: bold
-  transition: 0.3s
+  transition: .3s
+  z-index: 2
 
 .close:hover,
 .close:focus
