@@ -4,4 +4,5 @@ title: vicnoster
 link: https://victormartins.com.br/vicnoster/
 categories:
   - projects
+sitemap: false
 ---

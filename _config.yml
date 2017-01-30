@@ -49,3 +49,6 @@ exclude: [".jekyll-metadata", "Gemfile", "Gemfile.lock", ".gitignore", "node_mod
 
 encoding: utf-8
 lang: pt-BR
+
+gems:
+  - jekyll-sitemap
