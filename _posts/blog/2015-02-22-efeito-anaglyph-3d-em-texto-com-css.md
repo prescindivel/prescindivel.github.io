@@ -3,13 +3,9 @@ layout: post
 title: "Efeito anaglyph 3d em texto com CSS"
 description: "Como criar o efeito anaglyph 3d em textos com CSS"
 tags: [anglyph 3d, anglyph, css3, text-shadow, data atributtes]
-image:
-  cover-post: anaglyph.jpg
-  credit: getwallpapers
-  creditlink: http://getwallpapers.net/cats-anaglyph-3d-wallpaper-60496/
+cover-post: anaglyph.jpg
 categories:
-  - post
-  - css
+  - blog
 ---
 
 [Anáglifo](https://pt.wikipedia.org/wiki/An%C3%A1glifo) é uma imagem (ou um vídeo) formatada de maneira especial para fornecer um efeito tridimensional estereoscópico quando visto com óculos de duas cores (cada lente com uma cor diferente).

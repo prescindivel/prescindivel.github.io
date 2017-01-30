@@ -4,22 +4,38 @@
 body
   font-family: $base-font
   font-size: 16px
+  line-height: 1.4
   text-transform: lowercase
+  color: $gray
+  scroll-behavior: smooth
 
-.page
-  // padding-top: 50px
+img
+  max-width: 100%
+
+.wrapper
+  background-color: $white
+  position: relative
+  z-index: 1
 
 .container
   margin: 0 auto
   padding-top: 60px
-  padding-left: 10px
-  padding-right: 10px
+  padding-left: 15px
+  padding-right: 15px
   padding-bottom: 100px
   max-width: 700px
   & > h1
     font-size: em(40)
     text-align: center
     color: rgba($bg-color, .3)
+    margin-bottom: .2em
+  &-page,
+  &-article
+    font-size: 18px
+    a
+      border-bottom: 1px dashed $bg-color
+      &:hover
+        border-bottom-color: transparent
 
 a
   color: $bg-color
@@ -37,6 +53,8 @@ a
   color: $white
   background-color: $accent-color
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .26);
+  &.button
+    border: 0
   @extend %transition
   &:hover
     background-color: darken($accent-color, 2%)
@@ -44,3 +62,11 @@ a
 
 .adsense
   margin-top: 60px
+  .container-article &
+    margin-top: 0
+
+.social-button.social-button
+  width: 50px
+  display: inline-block
+  border-bottom: 0
+  text-align: center

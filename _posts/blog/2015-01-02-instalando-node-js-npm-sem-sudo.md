@@ -3,12 +3,9 @@ layout: post
 title: "Instalando Node.js/NPM sem Sudo"
 description: "Algumas instrucoes sobre como instalar o Node.js/NPM de modo que voce nao precise usar o comando sudo."
 tags: [nodejs, npm, sudo, yeoman]
-image:
-  cover-post: nodejs-sem-sudo.jpg
-  credit: re:splashed
-  creditlink: http://www.resplashed.com/
+cover-post: nodejs-sem-sudo.jpg
 categories:
-  - post
+  - blog
 ---
 
 Semana passada eu comecei a dar uma cara nova pro meu blog e como eu uso [Jekyll](http://jekyllrb.com/), resovi testar com o [Yeoman](http://yeoman.io/) (link do generator [aqui](https://github.com/robwierzbowski/generator-jekyllrb), YO!). Devido a minha experiência eu decidi compartilhar algumas instruções sobre como instalar o Node.js/NPM de modo que você não precise usar o comando `sudo` (descobri que precisava dessa restrição ao usar o *generator-jekyllrb*).

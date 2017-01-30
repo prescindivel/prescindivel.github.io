@@ -70,8 +70,8 @@ gulp.task('server', ['jekyll', 'sass', 'js'], () => {
 
   gulp.watch(src.js + '/*.js', ['js']);
   gulp.watch(src.sass + '/*.sass', ['sass']);
-  gulp.watch(['_config.yml','**/*.md', '_includes/*.html', '_layouts/*.html', '*.html'], ['jekyll']);
-  gulp.watch([src.root + '**/*.html', '_site/assets/js/main.min.js']).on('change', browserSync.reload);
+  gulp.watch(['*.yml', '**/*.md', 'feed.xml', '_includes/*.html', '_layouts/*.html', '*.html'], ['jekyll']);
+  gulp.watch(['_site/**/*.html', '_site/assets/js/main.min.js']).on('change', browserSync.reload);
 });
 
 gulp.task('js', () => {

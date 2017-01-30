@@ -13,13 +13,9 @@ social:
   avatar:         "https://avatars2.githubusercontent.com/u/6462673?v=3&s=460"
   email:          victorfrontend@gmail.com
   # Social networking links are used in author-bio sidebar. Update and remove as you like.
-  twitter:        prescindivel
-  facebook:       prescindivel
+  username:       prescindivel
   github:         victordev
   linkedin:       victormartins4
-  instagram:      prescindivel
-  lastfm:         prescindivel
-  pinterest:      prescindivel
   # For Google Authorship https://plus.google.com/authorship
   google_plus:    +VictorMartinsDev
 
@@ -30,20 +26,21 @@ google_verify:      Vk_OznIkGCtWe_l4ODtYatwsFu-qWk0yt-VHD2ILQBQ
 # Links to include in top navigation
 # For external links add external: true
 links:
-  - title: sobre
-    url: /sobre/
-  - title: artigos
-    url: /artigos/
+  - title: blog
+    url: /blog/
   - title: projetos
-    url: /projetos/
+    url: /projects/
+  - title: sobre
+    url: /about/
   - title: contato
-    url: /contato/
+    url: /contact/
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    America/Fortaleza
 future:      true
-highlighter: rouge
+
 markdown:    kramdown
+highlighter: rouge
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink:   /:categories/:title/

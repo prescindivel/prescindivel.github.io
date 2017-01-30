@@ -3,12 +3,9 @@ layout: post
 title: Olá Mundo
 description: "Iniciando o blog ;)"
 tags: [hello world, olá mundo, iniciando blog jekyll, jekyll, ruby, markdown]
-image:
-  cover-post: post-hello-world.jpg
-  credit: wallpaperest
-  creditlink: http://wallpaperest.com/wallpapers/hello-world_702777.png
+cover-post: post-hello-world.jpg
 categories:
-  - post
+  - blog
 ---
 
 Primeiramente seja bem-vindo ao meu blog, não gosto muito de formalidades mas gostaria de apresentar a vocês quem vai mantê-lo, ou pelo menos tentar.

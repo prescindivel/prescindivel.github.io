@@ -3,13 +3,9 @@ layout: post
 title: Jekyll e Github Pages
 description: "Como subir seu projeto Jekyll para o Github Pages e usar seu próprio domínio nele."
 tags: [instalar jekyll windows, github pages, blog jekyll, dominio github pages, subir projeto]
-image:
-  cover-post: github-pages.jpg
-  credit: jekyll
-  creditlink: http://jekyllrb.com/
+cover-post: github-pages.jpg
 categories:
-  - post
-update: 2 de Janeiro, 2015
+  - blog
 ---
 
 Além de suportar o conteúdo HTML regular, o Github Pages também suporta [Jekyll](http://www.victormartins.com.br/jekyll/entenda-o-que-eh-jekyll). Existem duas formas de subir seu projeto Jekyll para o Github Pages, e é tudo bem simples.

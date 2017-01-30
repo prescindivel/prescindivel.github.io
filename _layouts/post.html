@@ -1,5 +1,49 @@
----
-layout: post
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include _head.html %}
+</head>
+<body class="page-article">
+  <header class="header header-page">
+    {% include _navigation.html %}
 
-{{ content }}
+    <h1 id="title" class="page-title">
+      {{ page.title }}
+    </h1>
+
+    <time id="header-date" class="header-date" datetime="{{ page.date | date_to_long_string }}">
+      {{ page.date | date_to_string }}
+    </time>
+
+    <a class="arrow" href="#main">
+      <svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" viewBox="0 0 50.48 27.61" xml:space="preserve" width="50.48" height="27.61">
+        <g transform="matrix(0,0.10158851,-0.10158851,0,49.475497,-10.434396)">
+          <path d="m360.73 229.08-225.1-225.1c-5.3-5.3-13.8-5.3-19.1 0-5.3 5.3-5.3 13.8 0 19.1l215.5 215.5-215.5 215.5c-5.3 5.3-5.3 13.8 0 19.1 2.6 2.6 6.1 4 9.5 4 3.4 0 6.9-1.3 9.5-4l225.1-225.1c5.3-5.2 5.3-13.8 0.1-19z"/>
+        </g>
+      </svg>
+    </a>
+
+    <div class="header-bg" style="background-image: url({{ site.url }}/assets/images/posts/cover/{{ page.cover-post }});"></div>
+  </header>
+
+  <main id="main" class="wrapper">
+    <section class="container container-article clearfix" role="main">
+      {% include _adsense.html %}
+
+      {{ content }}
+
+      {% include _share.html %}
+
+      {% include _disqus.html %}
+    </section>
+  </main>
+
+  <div id="popup" class="popup">
+    <span class="close" onclick="document.querySelector('#popup').style.display='none'">&times;</span>
+    <img class="popup-content" id="popup-img">
+    <div id="caption"></div>
+  </div>
+
+  {% include _scripts.html %}
+</body>
+</html>

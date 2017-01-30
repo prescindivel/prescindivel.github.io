@@ -3,24 +3,18 @@ layout: post
 title: Entenda o que é Jekyll
 description: "Saiba o que é jekyll, entenda como ele funciona e como ele pode lhe ajudar a criar sites estáticos sem banco de dados."
 tags: [jekyll, o que é jekyll, blog jekyll, ruby, python, markdown]
-image:
-  cover-post: post-entenda-jekyll.jpg
-  credit: jekyll
-  creditlink: https://github.com/jekyll/brand
+cover-post: post-entenda-jekyll.jpg
 categories:
-  - post
+  - blog
 ---
 
 Jekyll é um fantástico gerador de código estático desenvolvido em [Ruby](). Nele você pode criar páginas e até um blog, usando HTML misturado com alguns truques que ajudam a converter seu site em arquivos estáticos pronto pra ser publicado. Ele é baseado em formatos como Markdown para formatar textos e postagens e também tem um padrão de template que se chama Liquid, junto com YAML para guardar os dados das variáveis. Não se preocupe se não estiver entendendo ainda, mais a frente no texto você vai entender.
 
-# Estrutura dos diretórios
+## Estrutura dos diretórios
 
 É tudo bem simples. Os aquivos que tiverem **_** (underline) antes do nome o Jekyll vai ignorar no produto final, quando converter seu projeto. Aqui uma estrutura básica:
 
-<figure>
-	<a href="{{ site.url }}/images/posts/estrutura-de-diretorio.jpg"><img src="{{ site.url }}/images/posts/estrutura-de-diretorio.jpg"></a>
-</figure>
-<br>
+<img class="image-post" src="{{ site.url }}/assets/images/posts/estrutura-de-diretorio.jpg" alt="Estrutura de diretórios">
 
 No diretório **_includes** você vai guardar os aquivos que vão ser reutilizados nas páginas do projeto, tipo head, footer, navigation e qualquer outra coisa, dependendo da sua necessidade.
 
@@ -50,7 +44,7 @@ Para quem não está familiarizado ainda, vai achar estranho. O `content` é a v
 
 O diretório **_site** é o build do seu projeto, onde o Jekyll vai colocar a versão final estática do site, prontinho pra ser publicado.
 
-# Estrutura dos códigos
+## Estrutura dos códigos
 
 No começo pode ser estranha para alguns por não terem familiaridade com com YAML, mas a estrutura dos códigos é bem simples de se entender.
 
@@ -206,7 +200,7 @@ Então chamamos os assets assim:
 Bem interessante, não acham?!
 Nem é preciso entender todas as variáveis que eles colocam no **_config.yml**. Você só precisa entender que dá pra criar novas variáveis personalizadas e que você poderá modificar os valores já existentes.
 
-# Start!
+## Start!
 
 Para começar um projeto é bem simples.
 Se você já tiver o Jekyll instalado basta ir no terminal e dar os seguintes comandos:

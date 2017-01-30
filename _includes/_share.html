@@ -1,0 +1,13 @@
+{% if page.share == null || page.share == true %}
+<h1 class="social-share-title">compartilhe</h1>
+<div class="social-share">
+  {% capture canonical %}{{ site.fullurl }}{% if site.permalink contains '.html' %}{{ page.url }}{% elsif site.permalink contains category_dir %}{{ '/' | page.url | remove:'index.html' | '/' }}{% else %}{{ page.url | remove:'index.html' | '/' }}{% endif %}{% endcapture %}
+    <a href="https://twitter.com/intent/tweet?url={{ site.url }}{{ page.url }}&amp;text={% if page.title %}{{ page.title | escape | truncate:100 | replace:' ','%20' }}{% else %}{{ site.title | escape | truncate:100 | replace:' ','%20' }}{% endif %}&amp;via={{ site.social.username }}" title="Share on Twitter" onclick="window.open(this.href, 'mywin', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="icon-twitter"></i> twitter</a>
+
+    <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" title="Share on Facebook" onclick="window.open(this.href, 'mywin', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="icon-facebook"></i> facebook</a>
+
+    <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" title="Share on Google Plus" onclick="window.open(this.href, 'mywin', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="icon-gplus"></i> google +</a>
+
+    <a href="http://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url }}" title="Share on Linkedin" onclick="window.open(this.href, 'mywin', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="icon-linkedin"></i> linkedin</a>
+</div>
+{% endif %}

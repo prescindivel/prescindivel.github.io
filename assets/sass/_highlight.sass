@@ -1,0 +1,178 @@
+$background : #002b36  // background
+$comment    : #586e75  // comments / secondary content
+$body-text  : #93a1a1  // body text / default code / primary content
+$orange     : #cb4b16  // constants
+$red        : #dc322f  // regex, special keywords
+$blue       : #268bd2  // reserved keywords
+$cyan       : #2aa198  // strings, numbers
+$green      : #859900  // operators, other keywords
+
+.highlight
+  padding: 0 15px
+  margin: 0 0 20px
+  font-size: .8em
+  background-color: $background
+  color: $body-text
+  letter-spacing: 1px
+  overflow-x: auto
+  pre
+    margin: 0
+  .code pre
+    padding: 1em
+  .lineno
+    padding-right: 20px
+    color: $comment
+  .c
+    color: $comment // Comment
+  .err
+    color: $body-text // Error
+  .g
+    color: $body-text // Generic
+  .k
+    color: $green // Keyword
+  .l
+    color: $body-text // Literal
+  .n
+    color: $body-text // Name
+  .o
+    color: $green // Operator
+  .x
+    color: $orange // Other
+  .p
+    color: $body-text // Punctuation
+  .cm
+    color: $comment // Comment.Multiline
+  .cp
+    color: $green // Comment.Preproc
+  .c1
+    color: $comment // Comment.Single
+  .cs
+    color: $green // Comment.Special
+  .gd
+    color: $cyan // Generic.Deleted
+  .ge
+    color: $body-text
+    font-style: italic // Generic.Emph
+  .gr
+    color: $red // Generic.Error
+  .gh
+    color: $orange // Generic.Heading
+  .gi
+    color: $green // Generic.Inserted
+  .go
+    color: $body-text // Generic.Output
+  .gp
+    color: $body-text // Generic.Prompt
+  .gs
+    color: $body-text
+    font-weight: bold // Generic.Strong
+  .gu
+    color: $orange // Generic.Subheading
+  .gt
+    color: $body-text // Generic.Traceback
+  .kc
+    color: $orange // Keyword.Constant
+  .kd
+    color: $blue // Keyword.Declaration
+  .kn
+    color: $green // Keyword.Namespace
+  .kp
+    color: $green // Keyword.Pseudo
+  .kr
+    color: $blue // Keyword.Reserved
+  .kt
+    color: $red // Keyword.Type
+  .ld
+    color: $body-text // Literal.Date
+  .m
+    color: $cyan // Literal.Number
+  .s
+    color: $cyan // Literal.String
+  .na
+    color: $body-text // Name.Attribute
+  .nb
+    color: #B58900 // Name.Builtin
+  .nc
+    color: $blue // Name.Class
+  .no
+    color: $orange // Name.Constant
+  .nd
+    color: $blue // Name.Decorator
+  .ni
+    color: $orange // Name.Entity
+  .ne
+    color: $orange // Name.Exception
+  .nf
+    color: $blue // Name.Function
+  .nl
+    color: $body-text // Name.Label
+  .nn
+    color: $body-text // Name.Namespace
+  .nx
+    color: $body-text // Name.Other
+  .py
+    color: $body-text // Name.Property
+  .nt
+    color: $blue // Name.Tag
+  .nv
+    color: $blue // Name.Variable
+  .ow
+    color: $green // Operator.Word
+  .w
+    color: $body-text // Text.Whitespace
+  .mf
+    color: $cyan // Literal.Number.Float
+  .mh
+    color: $cyan // Literal.Number.Hex
+  .mi
+    color: $cyan // Literal.Number.Integer
+  .mo
+    color: $cyan // Literal.Number.Oct
+  .sb
+    color: $comment // Literal.String.Backtick
+  .sc
+    color: $cyan // Literal.String.Char
+  .sd
+    color: $body-text // Literal.String.Doc
+  .s2
+    color: $cyan // Literal.String.Double
+  .se
+    color: $orange // Literal.String.Escape
+  .sh
+    color: $body-text // Literal.String.Heredoc
+  .si
+    color: $cyan // Literal.String.Interpol
+  .sx
+    color: $cyan // Literal.String.Other
+  .sr
+    color: $red // Literal.String.Regex
+  .s1
+    color: $cyan // Literal.String.Single
+  .ss
+    color: $cyan // Literal.String.Symbol
+  .bp
+    color: $blue // Name.Builtin.Pseudo
+  .vc
+    color: $blue // Name.Variable.Class
+  .vg
+    color: $blue // Name.Variable.Global
+  .vi
+    color: $blue // Name.Variable.Instance
+  .il
+    color: $cyan // Literal.Number.Integer.Long
+
+.highlight
+  &::-webkit-scrollbar
+    height: 10px
+  &::-webkit-scrollbar-track
+    background-color: rgba($white, .1)
+  &::-webkit-scrollbar-thumb
+    background-color: rgba($white, .3)
+
+p > code
+  padding: 3px 5px;
+  margin: 0 2px;
+  font-size: .75rem
+  white-space: nowrap
+  background-color: $background
+  color: lighten($body-text, 15%)
