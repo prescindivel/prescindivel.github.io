@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
       document.getElementById('nav').className = 'navigation';
     };
 
-    let isInPage = (node) => {
+    const isInPage = (node) => {
       return (node === document.body) ? false : document.body.contains(node);
     };
 
@@ -17,17 +17,17 @@ document.addEventListener("DOMContentLoaded", () => {
     const bio   = document.getElementsByClassName('bio')[0];
     const date  = document.getElementsByClassName('header-date')[0];
 
-    arrow.style.opacity = 1 - Math.max(scroll/450, 0);
+    arrow.style.opacity = 1 - Math.max(scroll/600, 0);
 
     if (isInPage(date)) {
-      date.style.opacity = 1 - Math.max(scroll/450, 0);
+      date.style.opacity = 1 - Math.max(scroll/600, 0);
     }
 
     if (isInPage(title)) {
       title.style.transform = 'translate3d(0px, ' + scroll/2 + 'px, 0px)';
-      title.style.opacity = 1 - Math.max(scroll/450, 0);
+      title.style.opacity = 1 - Math.max(scroll/600, 0);
     } else if (!isInPage(title)) {
-      bio.style.opacity = 1 - Math.max(scroll/450, 0);
+      bio.style.opacity = 1 - Math.max(scroll/600, 0);
       bio.style.transform = 'translate3d(0px, ' + scroll/2 + 'px, 0px)';
     }
   });

@@ -1,5 +1,8 @@
 <section id="nav" class="navigation{% if page.url == '/' %} home{% endif %}">
-  <a href="/" class="logo">{{ site.title }}</a>
+  <a href="/" class="logo">
+    <img src="{{ site.url }}/assets/images/logo.svg" alt="{{ site.title }} - {{ site.tagline }}">
+    <span>{{ site.title }}</span>
+  </a>
 
   <nav class="site-nav">
     <ul>

@@ -1,7 +1,14 @@
 *
   box-sizing: border-box
 
+html
+  font-family: sans-serif
+  line-height: 1.15
+  -ms-text-size-adjust: 100%
+  -webkit-text-size-adjust: 100%
+
 body
+  margin: 0
   font-family: $base-font
   font-size: 16px
   line-height: 1.4
@@ -9,8 +16,45 @@ body
   color: $gray
   scroll-behavior: smooth
 
+figcaption,
+article,
+section
+footer,
+header,
+figure,
+aside,
+main,
+nav
+  display: block
+
+hr
+  box-sizing: content-box
+  height: 0
+  overflow: visible
+
+pre
+  font-family: monospace, monospace
+  font-size: 1em
+
 img
   max-width: 100%
+  border-style: none;
+
+code,
+kbd,
+samp
+  font-family: monospace, monospace
+  font-size: 1em
+
+small
+  font-size: 80%
+
+audio,
+video
+  display: inline-block
+
+svg:not(:root)
+  overflow: hidden
 
 .wrapper
   background-color: $white
@@ -40,8 +84,11 @@ img
 a
   color: $bg-color
   text-decoration: none
+  -webkit-text-decoration-skip: objects
   @extend %transition
-  &:hover
+  &:hover,
+  &:active
+    outline-width: 0
     color: $white
     background: $accent-color
 

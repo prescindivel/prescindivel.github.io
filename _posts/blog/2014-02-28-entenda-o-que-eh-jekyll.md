@@ -14,7 +14,7 @@ Jekyll é um fantástico gerador de código estático desenvolvido em [Ruby](). 
 
 É tudo bem simples. Os aquivos que tiverem **_** (underline) antes do nome o Jekyll vai ignorar no produto final, quando converter seu projeto. Aqui uma estrutura básica:
 
-<img class="image-post" src="{{ site.url }}/assets/images/posts/estrutura-de-diretorio.jpg" alt="Estrutura de diretórios">
+<img class="image-post" src="{{ site.url }}/assets/images/posts/estrutura-de-diretorio.jpg" alt="Estrutura de diretórios jekyll">
 
 No diretório **_includes** você vai guardar os aquivos que vão ser reutilizados nas páginas do projeto, tipo head, footer, navigation e qualquer outra coisa, dependendo da sua necessidade.
 

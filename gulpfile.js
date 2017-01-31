@@ -32,7 +32,6 @@ const src = {
 
 const processors = [
 autoprefixer({browsers: ['> 0.1%', 'iOS >= 7', 'Safari >= 7',]}),
-require('postcss-font-magician')(),
 cssnano(),
 ]
 

@@ -3,14 +3,15 @@ tagline     :      desenvolvedor frontend
 description :      Oi, meu nome é Victor, tenho 21 anos e trabalho como desenvolvedor front-end desde 2013
 
 # Your site's domain goes here. Leave localhost server or blank when working locally.
-# url:              http://localhost:4000
-url:              https://victormartins.com.br
+# url:              https://victormartins.com.br
 enforce_ssl:      victormartins.com.br
+
+# theme color
+theme_color: "#2c3e50"
 
 
 # Owner/author information
 social:
-  avatar:         "https://avatars2.githubusercontent.com/u/6462673?v=3&s=460"
   email:          victorfrontend@gmail.com
   # Social networking links are used in author-bio sidebar. Update and remove as you like.
   username:       prescindivel
@@ -24,7 +25,6 @@ google_analytics:   UA-48294521-1
 google_verify:      Vk_OznIkGCtWe_l4ODtYatwsFu-qWk0yt-VHD2ILQBQ
 
 # Links to include in top navigation
-# For external links add external: true
 links:
   - title: blog
     url: /blog/
@@ -45,7 +45,7 @@ highlighter: rouge
 # https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink:   /:categories/:title/
 
-exclude: [".jekyll-metadata", "Gemfile", "Gemfile.lock", ".gitignore", "node_modules", "package.json", "gulpfile.js", "assets/sass"]
+exclude: [".jekyll-metadata", "Gemfile", "Rakefile.rb", "scripts", "Gemfile.lock", ".gitignore", "node_modules", "package.json", "gulpfile.js", "assets/sass"]
 
 encoding: utf-8
 lang: pt-BR
