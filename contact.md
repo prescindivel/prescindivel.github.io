@@ -29,9 +29,9 @@ Sinta-se à vontade, lhe responderei o mais rápido possivel.
 <a href="https://plus.google.com/{{ site.social.google_plus }}" class="social-button">
     <i class="icon-gplus"></i>
 </a>
-<!-- <a href="https://www.linkedin.com/in/{{ site.social.linkedin }}" class="social-button">
+<a href="https://www.linkedin.com/in/{{ site.social.linkedin }}" class="social-button">
     <i class="icon-linkedin"></i>
-</a> -->
+</a>
 <a href="http://www.last.fm/user/{{ site.social.username }}" class="social-button">
     <i class="icon-lastfm"></i>
 </a>
