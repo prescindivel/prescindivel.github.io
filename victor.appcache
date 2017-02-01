@@ -1,0 +1,23 @@
+---
+layout: null
+---
+CACHE MANIFEST
+# v1
+{% strip %}
+{% for item in site.static_files %}
+
+{% if item.path contains '/assets/css' %}
+{{ item.path }}
+
+{% elsif item.path contains '/assets/images' %}
+{{ item.path }}
+
+{% elsif item.path contains '/assets/fonts' %}
+{{ item.path }}
+
+{% elsif item.path contains '/assets/js/main' %}
+{{ item.path }}
+
+{% endif %}
+{% endfor %}
+{% endstrip %}
