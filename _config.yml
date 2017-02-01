@@ -3,8 +3,8 @@ tagline     :      desenvolvedor frontend
 description :      Oi, meu nome é Victor, tenho 21 anos e trabalho como desenvolvedor front-end desde 2013
 
 # Your site's domain goes here. Leave localhost server or blank when working locally.
-# url:              http://localhost:4000
-url:              https://victormartins.com.br
+url:              http://localhost:4000
+# url:              https://victormartins.com.br
 enforce_ssl:      victormartins.com.br
 
 # theme color
