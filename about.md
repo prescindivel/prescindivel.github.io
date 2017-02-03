@@ -7,18 +7,25 @@ description: "Olá meu nome é victor, desenvolvedor front-end desde 2013"
 ---
 
 Estudante de desenvolvimento web frontend, viciado em novas tecnologias, sempre pesquisando o que há de mais novo no mercado.
-Atualmente moro em Fortaleza e trabalho na [Avanz Comunicação Digital](http://www.avanz.com.br/).
+Atualmente moro em Fortaleza e trabalho na [Avanz Comunicação Digital](http://www.avanz.com.br/){:target="_blank"}.
 
 ## O que faço:
 
-* desenvolvimento front-end - *psd to html*
-* crossbrowser - *seu site totalmente funcional nos navegadores mais recentes*
-* design responsivo - *se adapta a smarthphones e tablets*
-* manutenção de websites - *tudo o que envolve desenvolvimento web*
+* **desenvolvimento front-end** - *psd to html/css/js*
+
+* **desenvolvimento mobile** - *seu aplicativo mobile nas plataformas ios e android*
+
+* **e-commerce** - *seu loja online em magento ou app mobile*
+
+* **crossbrowser** - *seu site totalmente funcional nos navegadores mais recentes*
+
+* **responsivo** - *se adapta a smarthphones, tablets e qualquer tamanho de tela*
+
+* **manutenção de websites** - *tudo o que envolve desenvolvimento web*
 
 ## Habilidades:
 
-*javascript*, *es6*, *angularjs*, *php*, *html5*, *css3*, *sass*, *git*, *gulp*, *photoshop*, *illustrator*, *titanium framework*, *ionic framework*, *drupal*, *magento* e *wordpress*.
+*javascript (es5, es6)*, *angularjs*, *php*, *html (pug)*, *css (sass, less, stylus)*, *git*, *gulp*, *mobile (titanium framework, ionic framework)*, *drupal*, *magento*, *wordpress*, *photoshop* e *illustrator*
 
 ---
 Se você é uma agência, empresa de desenvolvimento ou designer e está com uma demanda de trabalho que não justifica o aumento da equipe, pode contar com meus serviços. Estou aqui para isso.

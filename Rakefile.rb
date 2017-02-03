@@ -4,9 +4,9 @@ require "stringex"
 
 ## -- Config -- ##
 
-posts_dir       = "_posts/blog/"    # directory for blog files
-new_post_ext    = "md"  # default new post file extension when using the new_post task
-new_page_ext    = "md"  # default new page file extension when using the new_page task
+posts_dir    = "_posts/blog"    # directory for blog files
+projects_dir = "_posts/projects"    # directory for projects files
+ext          = "md"  # default new post file extension when using the new_post task
 
 
 #############################
@@ -21,13 +21,13 @@ task :newpost, :title do |t, args|
   else
     title = get_stdin("Enter a title for your post: ")
   end
-  filename = "#{posts_dir}/#{Time.now.strftime('%Y-%m-%d')}-#{title.to_url}.#{new_post_ext}"
+  filename = "#{posts_dir}/#{Time.now.strftime('%Y-%m-%d')}-#{title.to_url}.#{ext}"
   if File.exist?(filename)
     abort("rake aborted!") if ask("#{filename} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
   end
   tags = get_stdin("Enter tags to classify your post (comma separated): ")
   description = get_stdin("Enter description your post: ")
-  category = get_stdin("Enter categories your post: ")
+  cover = get_stdin("Enter cover image your post: ")
   puts "Creating new post: #{filename}"
   open(filename, 'w') do |post|
     post.puts "---"
@@ -35,45 +35,40 @@ task :newpost, :title do |t, args|
     post.puts "title: \"#{title.gsub(/&/,'&amp;')}\""
     post.puts "description: #{description}"
     post.puts "tags: [#{tags}]"
-    post.puts "image:"
-    post.puts "  cover-post: "
-    post.puts "  credit: "
-    post.puts "  creditlink: "
+    post.puts "cover-post: #{cover}.jpg"
     post.puts "categories:"
-    post.puts "  - #{category}"
-    post.puts "update: "
+    post.puts "  - blog"
     post.puts "---"
   end
 end
 
-# usage rake newpage
-desc "Create a new page"
-task :newpage, :title do |t, args|
+
+# usage rake newproject
+desc "Create a new project in #{projects_dir}"
+task :newproject, :title do |t, args|
   if args.title
     title = args.title
   else
-    title = get_stdin("Enter a title for your page: ")
+    title = get_stdin("Enter a title for your project: ")
   end
-  filename = "#{title.to_url}.#{new_page_ext}"
+  filename = "#{projects_dir}/#{Time.now.strftime('%Y-%m-%d')}-#{title.to_url}.#{ext}"
   if File.exist?(filename)
     abort("rake aborted!") if ask("#{filename} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
   end
-  tags = get_stdin("Enter tags to classify your page (comma separated): ")
-  puts "Creating new page: #{filename}"
-  open(filename, 'w') do |page|
-    page.puts "---"
-    page.puts "layout: page"
-    page.puts "permalink: /#{title.to_url}/"
-    page.puts "title: \"#{title}\""
-    page.puts "tags: [#{tags}]"
-    page.puts "image:"
-    page.puts "  cover-page: "
-    page.puts "  credit: "
-    page.puts "  creditlink: "
-    page.puts "update: "
-    page.puts "---"
+  link = get_stdin("Enter link your project: ")
+  puts "Creating new project: #{filename}"
+  open(filename, 'w') do |project|
+    project.puts "---"
+    project.puts "layout: null"
+    project.puts "title: \"#{title.gsub(/&/,'&amp;')}\""
+    project.puts "link: #{link}"
+    project.puts "categories:"
+    project.puts "  - projects"
+    project.puts "sitemap: false"
+    project.puts "---"
   end
 end
+
 
 def get_stdin(message)
   print message
