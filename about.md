@@ -15,11 +15,11 @@ Atualmente moro em Fortaleza e trabalho na [Avanz Comunicação Digital](http://
 
 * **desenvolvimento mobile** - *seu aplicativo mobile nas plataformas ios e android*
 
-* **e-commerce** - *seu loja online em magento ou app mobile*
+* **e-commerce** - *sua loja online em magento ou app mobile*
 
 * **crossbrowser** - *seu site totalmente funcional nos navegadores mais recentes*
 
-* **responsivo** - *se adapta a smarthphones, tablets e qualquer tamanho de tela*
+* **responsivo** - *se adapta a smarthphones, tablets e a qualquer tamanho de tela*
 
 * **manutenção de websites** - *tudo o que envolve desenvolvimento web*
 
