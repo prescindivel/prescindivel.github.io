@@ -85,7 +85,7 @@ lembre que um repositório do tipo *bare* não guarda as versões, por isso trab
 
 ### 3. configurando ambiente local
 
-adicione a url remota apontando para o repo git criado em seu servidor no [Passo 2]({{post.url}}/#inicie-um-repositrio-do-tipo-bare)
+adicione a url remota apontando para o repo git criado em seu servidor no <a href="{{post.url}}/#inicie-um-repositrio-do-tipo-bare)">Passo 2</a>
 
 {% highlight shell %}
 {% raw %}
