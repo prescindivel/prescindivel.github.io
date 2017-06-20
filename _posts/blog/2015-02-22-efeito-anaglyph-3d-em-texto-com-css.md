@@ -71,4 +71,4 @@ Primeiro declaramos o atributo `data-text` como o mesmo valor do texto. E no css
 
 No pseudo elemento `:after` pegamos o valor do `data-text` com o atributo css `content` e posicionamos como se fosse uma sombra. Depois é só aplicar um blend multiply com o atributo `mix-blend-mode`, simples né não?
 
-Veja funcionando nesse [link](http://www.victormartins.com.br/css-anaglyph/)
+Veja funcionando nesse [link](https://victordev.github.io/css-anaglyph/)

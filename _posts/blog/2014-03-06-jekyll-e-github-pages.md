@@ -8,7 +8,7 @@ categories:
   - blog
 ---
 
-Além de suportar o conteúdo HTML regular, o Github Pages também suporta [Jekyll](http://www.victormartins.com.br/jekyll/entenda-o-que-eh-jekyll). Existem duas formas de subir seu projeto Jekyll para o Github Pages, e é tudo bem simples.
+Além de suportar o conteúdo HTML regular, o Github Pages também suporta [Jekyll](https://victormartins.com.br/blog/entenda-o-que-eh-jekyll). Existem duas formas de subir seu projeto Jekyll para o Github Pages, e é tudo bem simples.
 
 ## Subindo para sua conta
 
