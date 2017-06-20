@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "deploy automatizado com git "
-description: como configurar e executar um deploy automatizado com git
-tags: [git, ssh, deploy]
-cover-post: .jpg
+description: se você ainda usa ftp para subir arquivos pro servidor em pleno 2017 STOP!!!
+tags: [git, github, gitlab, bitbucket, ssh, deploy]
+cover-post: post-git-deploy.jpg
 categories:
   - blog
 ---
@@ -34,7 +34,7 @@ estando instalado siga para o próximo passo.
 ### 2. inicie um repositório do tipo *bare*
 
 esse repositório pode ser criado em qualquer pasta no seu servidor. geralmente eu crio ela dentro da pasta que se refere ao projeto com o nome, por exemplo:
-se eu tenho um projeto no meu servidor dentro da pasta *~/public_html/projeto*, irei criar o repositorio bare dentro dela assim *~/public_html/projeto/.git*.
+se eu tenho um projeto no meu servidor dentro da pasta */var/www/html/projeto*, irei criar o repositorio bare dentro dela assim */var/www/html/projeto/.git*.
 
 criando o repositório:
 {% highlight shell %}
@@ -65,7 +65,7 @@ o arquivo deve conter as seguintes linhas:
 {% highlight shell linenos %}
 {% raw %}
 #!/bin/sh
-GIT_WORK_TREE=/home/user/public_html/projeto git checkout -f
+GIT_WORK_TREE=/var/www/html/projeto git checkout -f
 {% endraw %}
 {% endhighlight %}
 
@@ -81,4 +81,30 @@ tendo criado o arquivo, vamos deixa-lo executável com o comando:
 
 o hook post-receive é uma espécie de observer e é sempre executado quando um novo post é recebido nesse diretório que criamos *.git*. então sempre que você excutar o comando `git push deploy` (iremos configurar isso no próximo passo) o post-receive vai pegar os arquivos modificados e enviar pro diretório indicado no `GIT_WORK_TREE` e checar como a versão atual.
 
-lembre que um repositório do tipo *bare* não guarda as versões por isso trabalhe com Github/Gitlab/Bitbucket/etc pra fazer o versionamento. esse repo que criamos no servidor só vai ser responsável para manter atualizada a ultima versão que é enviada pra ele.
+lembre que um repositório do tipo *bare* não guarda as versões, por isso trabalhe com Github/Gitlab/Bitbucket/etc pra fazer o versionamento. esse repo que criamos no servidor só vai ser responsável para manter atualizada a ultima versão que é enviada pra ele.
+
+### 3. configurando ambiente local
+
+adicione a url remota apontando para o repo git criado em seu servidor no [Passo 2](#inicie-um-repositrio-do-tipo-bare)
+
+{% highlight shell %}
+{% raw %}
+  $ git remote add deploy usuario@dominio:/var/www/html/projeto/.git
+{% endraw %}
+{% endhighlight %}
+
+tendo feito isso só resta subir seus commits para o servidor da mesma forma que faz para o Github, basta substituir `origin` por `deploy` no push sempre indicando para a branch master. exemplo:
+
+{% highlight shell %}
+{% raw %}
+  $ git push deploy master
+{% endraw %}
+{% endhighlight %}
+
+se você trabalhar com outras branchs certifique-se de fazer o merge na master. geralmente uso a master para produção.
+
+## recomendo:
+
+  * [git-flow](https://danielkummer.github.io/git-flow-cheatsheet/index.pt_BR.html)
+
+qualquer sugestão ou dúvida fique a vontade para comentaaaar
