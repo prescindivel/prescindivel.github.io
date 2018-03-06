@@ -4,7 +4,7 @@ description :      Oi, meu nome é Victor, tenho 21 anos e trabalho como desenvo
 
 # Your site's domain goes here. Leave localhost server or blank when working locally.
 # url:              http://localhost:4000
-url:              https://victordev.github.io
+url:              https://victordev.github.io/victor
 
 # theme color
 theme_color: "#2c3e50"
