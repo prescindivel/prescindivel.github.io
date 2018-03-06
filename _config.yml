@@ -27,13 +27,13 @@ google_verify:      Vk_OznIkGCtWe_l4ODtYatwsFu-qWk0yt-VHD2ILQBQ
 # Links to include in top navigation
 links:
   - title: blog
-    url: /blog/
+    url: /victor/blog/
   - title: projetos
-    url: /projects/
+    url: /victor/projects/
   - title: sobre
-    url: /about/
+    url: /victor/about/
   - title: contato
-    url: /contact/
+    url: /victor/contact/
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    America/Fortaleza
