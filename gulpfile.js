@@ -5,7 +5,7 @@ const gulp         = require('gulp');
 const plumber      = require('gulp-plumber');
 
 const gutil        = require('gulp-util');
-const notify        = require('gulp-notify');
+const notify       = require('gulp-notify');
 const child        = require('child_process');
 
 const browserSync  = require('browser-sync');
@@ -50,7 +50,7 @@ gulp.task('js', () => {
   return gulp.src([src.js + '/*.js', '!assets/js/*.min.js'])
     .pipe(sourcemaps.init())
     .pipe(plumber({ errorHandler: onError }))
-    .pipe(babel({ presets: ['es2015'] }))
+    .pipe(babel({ presets: ['env']}))
     .pipe(concat('main.min.js'))
     .pipe(uglify())
     .pipe(plumber.stop())
