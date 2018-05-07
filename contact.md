@@ -10,12 +10,15 @@ Atualmente morando em Fortaleza - CE
 
 ### [victorfrontend@gmail.com](mailto:victorfrontend@gmail.com)
 
-[+55 85 97542187](tel:8597542187) ou [+55 85 88312924](tel:8588312924)
+[+55 85 97542187](tel:8597542187)
 
 Sinta-se à vontade, lhe responderei o mais rápido possivel.
 
-<a href="https://github.com/{{ site.social.github }}" class="social-button">
+<a href="https://github.com/{{ site.social.username }}" class="social-button">
     <i class="icon-github-circled"></i>
+</a>
+<a href="https://t.me/{{ site.social.username }}" class="social-button">
+    <i class="icon-telegram"></i>
 </a>
 <a href="https://twitter.com/{{ site.social.username }}" class="social-button">
     <i class="icon-twitter"></i>

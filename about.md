@@ -25,7 +25,7 @@ Atualmente moro em Fortaleza e trabalho na [Avanz Comunicação Digital](http://
 
 ## Habilidades:
 
-*javascript (es5, es6)*, *angularjs*, *php*, *html (pug)*, *css (sass, less, stylus)*, *git*, *gulp*, *mobile (titanium framework, ionic framework)*, *drupal*, *magento*, *wordpress*, *photoshop* e *illustrator*
+*javascript (es5, es6)*, *angular*, *nodejs*, *php*, *html (pug)*, *css (sass, less, stylus)*, *git*, *gulp*, *mobile (ionic, nativo)*, *drupal*, *magento*, *wordpress*, *photoshop* e *illustrator*
 
 ---
 Se você é uma agência, empresa de desenvolvimento ou designer e está com uma demanda de trabalho que não justifica o aumento da equipe, pode contar com meus serviços. Estou aqui para isso.

@@ -46,6 +46,19 @@ gulp.task('sass', () => {
  .pipe(browserSync.stream({match: '**/*.css'}));
 });
 
+gulp.task('js', () => {
+  return gulp.src([src.js + '/*.js', '!assets/js/*.min.js'])
+    .pipe(sourcemaps.init())
+    .pipe(plumber({ errorHandler: onError }))
+    .pipe(babel({ presets: ['es2015'] }))
+    .pipe(concat('main.min.js'))
+    .pipe(uglify())
+    .pipe(plumber.stop())
+    .pipe(sourcemaps.write(src.maps))
+    .pipe(gulp.dest(src.js))
+    .pipe(gulp.dest(src.root + '/' + src.js));
+});
+
 gulp.task('jekyll', () => {
   const jekyll = child.spawn('jekyll', ['build', '--incremental', '--drafts']);
 
@@ -71,19 +84,6 @@ gulp.task('server', ['jekyll', 'sass', 'js'], () => {
   gulp.watch(src.sass + '/*.sass', ['sass']);
   gulp.watch(['*.yml', '**/*.md', 'feed.xml', '_includes/*.html', '_layouts/*.html', '*.html'], ['jekyll']);
   gulp.watch(['_site/**/*.html', '_site/assets/js/main.min.js']).on('change', browserSync.reload);
-});
-
-gulp.task('js', () => {
-  return gulp.src([src.js + '/*.js', '!assets/js/*.min.js'])
-  .pipe(sourcemaps.init())
-  .pipe(plumber({errorHandler: onError}))
-  .pipe(babel({presets: ['es2015']}))
-  .pipe(concat('main.min.js'))
-  .pipe(uglify())
-  .pipe(plumber.stop())
-  .pipe(sourcemaps.write(src.maps))
-  .pipe(gulp.dest(src.js))
-  .pipe(gulp.dest(src.root + '/' + src.js));
 });
 
 const onError = function (err) {

@@ -4,7 +4,7 @@ description :      Oi, meu nome é Victor, tenho 23 anos e trabalho como desenvo
 
 # Your site's domain goes here. Leave localhost server or blank when working locally.
 # url:              http://localhost:4000
-url:              https://victordev.github.io/victor
+url:              https://prescindivel.github.io
 
 # theme color
 theme_color: "#2c3e50"
@@ -15,7 +15,6 @@ social:
   email:          victorfrontend@gmail.com
   # Social networking links are used in author-bio sidebar. Update and remove as you like.
   username:       prescindivel
-  github:         victordev
   linkedin:       victormartins4
   # For Google Authorship https://plus.google.com/authorship
   google_plus:    +VictorMartinsDev
@@ -27,13 +26,13 @@ google_verify:      Vk_OznIkGCtWe_l4ODtYatwsFu-qWk0yt-VHD2ILQBQ
 # Links to include in top navigation
 links:
   - title: blog
-    url: /victor/blog/
+    url: /blog/
   - title: projetos
-    url: /victor/projects/
+    url: /projects/
   - title: sobre
-    url: /victor/about/
+    url: /about/
   - title: contato
-    url: /victor/contact/
+    url: /contact/
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    America/Fortaleza
@@ -50,7 +49,7 @@ exclude: [".jekyll-metadata", "Gemfile", "Rakefile.rb", "scripts", "Gemfile.lock
 encoding: utf-8
 lang: pt-BR
 
-gems:
+plugins:
   - jekyll-sitemap
 
 webserver_headers:

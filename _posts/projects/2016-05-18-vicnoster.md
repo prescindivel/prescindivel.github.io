@@ -1,7 +1,7 @@
 ---
 layout: null
 title: vicnoster
-link: https://victordev.github.io/vicnoster/
+link: https://prescindivel.github.io/vicnoster/
 categories:
   - projects
 sitemap: false

@@ -42,7 +42,7 @@ A outra forma de fazer isso é com pseudo elementos css `:before` ou `:after` e 
 {% endraw %}
 {% endhighlight %}
 
-    
+
 Primeiro declaramos o atributo `data-text` como o mesmo valor do texto. E no css definimos as cores e criamos o pseudo elemento:
 
 {% highlight css linenos %}
@@ -64,11 +64,11 @@ Primeiro declaramos o atributo `data-text` como o mesmo valor do texto. E no css
   content: attr(data-text);
   transform: translate(3px, 2px);
   mix-blend-mode: multiply;
-}      
+}
 
 {% endraw %}
 {% endhighlight %}
 
 No pseudo elemento `:after` pegamos o valor do `data-text` com o atributo css `content` e posicionamos como se fosse uma sombra. Depois é só aplicar um blend multiply com o atributo `mix-blend-mode`, simples né não?
 
-Veja funcionando nesse [link](https://victordev.github.io/css-anaglyph/)
+Veja funcionando nesse [link]({{ site.url }}/css-anaglyph/)
