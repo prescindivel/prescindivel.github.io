@@ -11,11 +11,11 @@ document.querySelector('.arrow').addEventListener('click', (e) => {
 });
 
 window.addEventListener('scroll', () => {
-  if (window.pageYOffset > scrollPosition) {
+  if (window.pageYOffset > (scrollPosition - 52)) {
     document.querySelector('.navigation').classList.add('scroll');
   }
 
-  if (window.pageYOffset < scrollPosition) {
+  if (window.pageYOffset < (scrollPosition - 52)) {
     document.querySelector('.navigation').classList.remove('scroll');
   }
 });
