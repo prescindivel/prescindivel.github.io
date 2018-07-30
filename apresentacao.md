@@ -1,3 +1,12 @@
+---
+layout: page
+title: Apresentação.
+cover-page: home.jpg
+tags: [apresentacao]
+description: "Apresentação"
+---
+
+
 # Apresentação
 
 ## Desenvolvimento mobile
