@@ -6,8 +6,8 @@ tags: [sobre mim, victor martins, victor, webdesign, desenvolvedor front-end, fr
 description: "Olá meu nome é victor, desenvolvedor front-end desde 2013"
 ---
 
-Estudante de desenvolvimento web frontend, viciado em novas tecnologias, sempre pesquisando o que há de mais novo no mercado.
-Atualmente moro em Fortaleza e trabalho na [Avanz Comunicação Digital](http://www.avanz.com.br/){:target="_blank"}.
+Estudante de desenvolvimento mobile/web front-end, viciado em novas tecnologias, sempre pesquisando o que há de mais novo no mercado.
+Atualmente moro em Fortaleza e trabalho na [Konstroi](https://konstroi.com/){:target="_blank"}.
 
 ## O que faço:
 
@@ -25,7 +25,15 @@ Atualmente moro em Fortaleza e trabalho na [Avanz Comunicação Digital](http://
 
 ## Habilidades:
 
-*javascript (es5, es6)*, *angular*, *nodejs*, *php*, *html (pug)*, *css (sass, less, stylus)*, *git*, *gulp*, *mobile (ionic, nativo)*, *drupal*, *magento*, *wordpress*, *photoshop* e *illustrator*
+javascript, jquery, typescript, dart lang, php, html5, css3
+angular, express.js, ionic framework, flutter, electron,
+bootstrap, semantic ui, wordpress, drupal, magento,
+jekyll,
+node.js, npm, webpack, grunt, gulp, yeoman, babel,
+postcss, sass, less, uncss, 
+vscode, terminal, git, gitflow, linux, mac os, android, ios,
+photoshop, illustrator, adobe xd, postman,
+scrum, agile, jira, seo, design responsivo, ui/ux,
 
 ---
 Se você é uma agência, empresa de desenvolvimento ou designer e está com uma demanda de trabalho que não justifica o aumento da equipe, pode contar com meus serviços. Estou aqui para isso.
